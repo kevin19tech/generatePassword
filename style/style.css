@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --verde:#20d420;
+    --black:#1d1b1b;
+}
+body{
+    background-color: #1d1b1b;
+    color: rgb(241, 241, 241);
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#boxPrincipal{
+    background-color: rgb(61, 60, 60);
+    /*display: flex;*/
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid var(--verde);
+    padding: 20px;
+}
+
+#areaPerguntas{
+    text-align: start;
+    /*display: flex;
+    flex-direction: column;*/
+    
+}
+label{
+    margin-bottom: 5px;
+}
+input{
+    margin: 8px 0;;
+    
+}
+
+.inputText{
+    padding: 8px;
+    width: 25%;
+    outline-color:var(--verde) ;
+    border: none;
+    border-radius: 5px;
+}
+#inputLength{
+}
+
+#inputUpper{
+    display: inline-block;
+    border: 1px solid red;
+}
+.areaBtnGerarSenha{
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+}
+.btnSenha{
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: var(--verde);
+    cursor: pointer;
+    
+}
+.btnSenha:hover{
+    background-color: var(--black);
+    border-color: var(--verde);
+    color: var(--verde);
+}

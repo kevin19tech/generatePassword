@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Gerador de Senhas</title>
+</head>
+<body>
+    <main>
+        <div id="boxPrincipal">
+            <img src="assets/lock.png" alt="cadeado" width="64">
+            <h2 style="margin:15px 0; color: var(--verde);">Gerador de Senha</h2>
+            <p>Responda às perguntas abaixo para gerar sua senha</p>
+            <br>
+            <div id="areaPerguntas">
+                <label for="lenght">A senha deve ter quantos caracteres?</label><br>
+                <input type="number" name="" class="inputLength inputText" placeholder="Ex.: 8"><br>
+                <label for="">Deve possuir letras maiúsculas?</label><br>
+                <input type="checkbox" name="letrasMaiusculas" id="inputUpper"><br>
+                <label for="">Deve possuir letras minúsculas?</label><br>
+                <input type="checkbox" name="letrasMaiusculas" id="inputLower"><br>
+                <label for="">Deve possuir números?</label><br>
+                <input type="checkbox" name="letrasMaiusculas" id="inputNUmber"><br>
+                <label for="">Deve possuir Símbolos?</label><br>
+                <input type="checkbox" name="letrasMaiusculas" id="inputSymbol"><br>
+
+                <div class="areaBtnGerarSenha">
+                    <button class="btnSenha">
+                        Gerar Senha
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+</body>
+</html>
