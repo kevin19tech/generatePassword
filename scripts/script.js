@@ -15,28 +15,35 @@ var passwordText = document.getElementById('result')
 
 //funcoes
 function generatePassword(){
-    resultArea.style.display = 'block'
-    //início captura do tamanho da senha
-    var passwordLength = document.getElementById('passLength').value
-    passwordText.innerText = passwordLength 
-    //fim captura do tamanho da senha
+    //capturar e converter tamanho 
+    var passwordLength = Number(document.getElementById('passLength').value)
+    //verificar se tamanho está vazio
+    if(passwordLength <=0){
+        alert('O campo de quantidade de caracteres está em branco. É necessário preencher.')
+    }else if(passwordLength <= 3){ //verificar se tamanho é maior do que 4
+        alert('Sua senha tem menos de 4 caracteres. Por favor, escolha uma quantidade a partir de 4') 
+    }else{
+        resultArea.style.display = 'block'
+        //início captura do tamanho da senha
+        passwordText.innerText = passwordLength 
+        //fim captura do tamanho da senha
 
-    // Gerar letra MAIÚSCULA Aleatória - método random
-    const randomUpper = upperArray[Math.floor(Math.random() * upperArray.length)] 
-    passwordText.innerText += randomUpper
+        // Gerar letra MAIÚSCULA Aleatória - método random
+        const randomUpper = upperArray[Math.floor(Math.random() * upperArray.length)] 
+        passwordText.innerText += randomUpper
 
-    // Gerar letra MINÚSCULA Aleatória - método random
-    const randomLower = lowerArray[Math.floor(Math.random() * lowerArray.length)] 
-    passwordText.innerText += randomLower
+        // Gerar letra MINÚSCULA Aleatória - método random
+        const randomLower = lowerArray[Math.floor(Math.random() * lowerArray.length)] 
+        passwordText.innerText += randomLower
 
-    // Gerar NÚMERO Aleatório - método random
-    const randomNumber = numbersArray[Math.floor(Math.random() * numbersArray.length)]
-    passwordText.innerText += randomNumber
+        // Gerar NÚMERO Aleatório - método random
+        const randomNumber = numbersArray[Math.floor(Math.random() * numbersArray.length)]
+        passwordText.innerText += randomNumber
 
-    // Gerar NÚMERO Aleatório - método random
-    const randomSymbols = symbolsArray[Math.floor(Math.random() * symbolsArray.length)]
-    passwordText.innerText += randomSymbols
-    
+        // Gerar NÚMERO Aleatório - método random
+        const randomSymbols = symbolsArray[Math.floor(Math.random() * symbolsArray.length)]
+        passwordText.innerText += randomSymbols
+    }
 
 
 
