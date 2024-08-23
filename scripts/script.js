@@ -18,9 +18,9 @@ let checkSymbol = document.getElementById('checkboxSymbol')
 
 //funcoes
 function generatePassword(){
-    
     //capturar e converter tamanho 
     var passwordLength = Number(document.getElementById('passLength').value)
+    
     //verificar se tamanho está vazio
     if(passwordLength <=0){
         alert('O campo de quantidade de caracteres está em branco. É necessário preencher.')
@@ -31,22 +31,22 @@ function generatePassword(){
 
         while(x <= passwordLength && passwordArray.length <= passwordLength){
             //verificar se usuário marcou opção de letras MAÍUSCULAS
-        if(checkUpper.checked){
+        if(checkUpper.checked && passwordArray.length < passwordLength){
             // Gerar letra MAIÚSCULA Aleatória - método random
             const randomUpper = upperArray[Math.floor(Math.random() * upperArray.length)] 
             //passwordText.innerText += randomUpper
             passwordArray.push(randomUpper)
-        }if(checkLower.checked ){
+        }if(checkLower.checked && passwordArray.length < passwordLength){
             // Gerar letra MINÚSCULA Aleatória - método random
             const randomLower = lowerArray[Math.floor(Math.random() * lowerArray.length)] 
             //passwordText.innerText += randomLower
             passwordArray.push(randomLower)
-        }if(checkNumber.checked ){
+        }if(checkNumber.checked && passwordArray.length < passwordLength){
             // Gerar NÚMERO Aleatório - método random
             const randomNumber = numbersArray[Math.floor(Math.random() * numbersArray.length)]
             //passwordText.innerText += randomNumber
             passwordArray.push(randomNumber)
-        }if (checkSymbol.checked){
+        }if (checkSymbol.checked && passwordArray.length < passwordLength){
             // Gerar NÚMERO Aleatório - método random
             const randomSymbols = symbolsArray[Math.floor(Math.random() * symbolsArray.length)]
             //passwordText.innerText += randomSymbols
@@ -55,6 +55,7 @@ function generatePassword(){
 
         x++
         console.log(x)
+        console.log('array' + passwordArray)
         }
         
 
@@ -76,5 +77,6 @@ function limpar(){
     passwordText.innerText = ''
     passwordArray = []
     resultArea.style.display = 'none'
+    
     
 }
