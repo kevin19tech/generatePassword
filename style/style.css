@@ -8,6 +8,9 @@
     font-family: 'Share Tech',sans serif;
 
 }
+p{
+    font-size: 20px;
+}
 
 :root{
     --verde:#20d420;
@@ -40,6 +43,7 @@ main{
 }
 label{
     margin-bottom: 5px;
+    font-size: 20px;
 }
 input{
     margin: 8px 0;;
@@ -79,4 +83,8 @@ input{
     background-color: var(--black);
     border-color: var(--verde);
     color: var(--verde);
+}
+
+#areaResultado{
+    text-align: center;
 }

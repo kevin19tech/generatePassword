@@ -15,7 +15,7 @@
             <br>
             <div id="areaPerguntas">
                 <label for="lenght">A senha deve ter quantos caracteres?</label><br>
-                <input type="number" name="" class="inputLength inputText" placeholder="Ex.: 8"><br>
+                <input type="number" name="" class="inputLength inputText" placeholder="Ex.: 8" id="passLength"><br>
                 <label for="">Deve possuir letras maiúsculas?</label><br>
                 <input type="checkbox" name="letrasMaiusculas" id="inputUpper"><br>
                 <label for="">Deve possuir letras minúsculas?</label><br>
@@ -24,9 +24,14 @@
                 <input type="checkbox" name="letrasMaiusculas" id="inputNUmber"><br>
                 <label for="">Deve possuir Símbolos?</label><br>
                 <input type="checkbox" name="letrasMaiusculas" id="inputSymbol"><br>
-
+                <div id="areaResultado">
+                    <p id="resultToogle" style="display: none;">Senha gerada:</p>
+                    <p id="result">
+                        
+                    </p>
+                </div>
                 <div class="areaBtnGerarSenha">
-                    <button class="btnSenha">
+                    <button class="btnSenha" onclick="generatePassword()">
                         Gerar Senha
                     </button>
                 </div>
@@ -34,5 +39,6 @@
             </div>
         </div>
     </main>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
