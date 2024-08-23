@@ -27,19 +27,21 @@ function generatePassword(){
     }else if(passwordLength <= 3){ //verificar se tamanho é maior do que 4
         alert('Sua senha tem menos de 4 caracteres. Por favor, escolha uma quantidade a partir de 4') 
     }else{
-        
-        //verificar se usuário marcou opção de letras MAÍUSCULAS
+        let x = 1
+
+        while(x <= passwordLength && passwordArray.length <= passwordLength){
+            //verificar se usuário marcou opção de letras MAÍUSCULAS
         if(checkUpper.checked){
             // Gerar letra MAIÚSCULA Aleatória - método random
             const randomUpper = upperArray[Math.floor(Math.random() * upperArray.length)] 
             //passwordText.innerText += randomUpper
             passwordArray.push(randomUpper)
-        }if(checkLower.checked){
+        }if(checkLower.checked ){
             // Gerar letra MINÚSCULA Aleatória - método random
             const randomLower = lowerArray[Math.floor(Math.random() * lowerArray.length)] 
             //passwordText.innerText += randomLower
             passwordArray.push(randomLower)
-        }if(checkNumber.checked){
+        }if(checkNumber.checked ){
             // Gerar NÚMERO Aleatório - método random
             const randomNumber = numbersArray[Math.floor(Math.random() * numbersArray.length)]
             //passwordText.innerText += randomNumber
@@ -51,6 +53,11 @@ function generatePassword(){
             passwordArray.push(randomSymbols)
         }
 
+        x++
+        console.log(x)
+        }
+        
+
 
         resultArea.style.display = 'block'
         passwordText.innerText = passwordArray.join('')
@@ -58,7 +65,7 @@ function generatePassword(){
         
 
         
-        //fim captura do tamanho da senha
+        
         
     }
 
