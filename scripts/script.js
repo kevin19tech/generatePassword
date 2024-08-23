@@ -18,6 +18,7 @@ let checkSymbol = document.getElementById('checkboxSymbol')
 
 //funcoes
 function generatePassword(){
+    
     //capturar e converter tamanho 
     var passwordLength = Number(document.getElementById('passLength').value)
     //verificar se tamanho está vazio
@@ -64,3 +65,8 @@ function generatePassword(){
 
 }
 
+function limpar(){
+    passwordText.innerText = ''
+    passwordArray = []
+    resultArea.style.display = 'none'
+}

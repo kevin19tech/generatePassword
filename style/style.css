@@ -62,24 +62,36 @@ input{
 
 #inputUpper{
     display: inline-block;
-    border: 1px solid red;
 }
 .areaBtnGerarSenha{
     margin-top: 8px;
     display: flex;
-    justify-content: center;
+    
+    justify-content: space-around;
 }
-.btnSenha{
+.btn{
+    width: 86px;
+    padding: 8px 0;
     font-size: 15px;
     font-weight: bold;
     border: none;
     border-radius: 5px;
-    padding: 8px;
-    background-color: var(--verde);
     cursor: pointer;
-    
+}
+.btnSenha{
+    background-color: var(--verde); 
 }
 .btnSenha:hover{
+    background-color: var(--black);
+    border-color: var(--verde);
+    color: var(--verde);
+}
+.btnLimpar{
+    background-color: rgb(221, 218, 218);
+    
+    
+}
+.btnLimpar:hover{
     background-color: var(--black);
     border-color: var(--verde);
     color: var(--verde);
