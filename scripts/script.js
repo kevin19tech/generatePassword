@@ -52,6 +52,8 @@ function generatePassword(){
         }
 
 
+        resultArea.style.display = 'block'
+        passwordText.innerText = passwordArray.join('')
 
         
 
@@ -60,8 +62,6 @@ function generatePassword(){
         
     }
 
-    resultArea.style.display = 'block'
-    passwordText.innerText = passwordArray.join('')
 
 }
 
@@ -69,4 +69,5 @@ function limpar(){
     passwordText.innerText = ''
     passwordArray = []
     resultArea.style.display = 'none'
+    
 }
