@@ -74,11 +74,14 @@ function generatePassword(){
 }
 
 function limpar(){
+    //limpar texto do resultado
     passwordText.innerText = ''
     resultArea.style.display = 'none'
-    
-
-    
-    
-    
+    //limpar input
+    document.getElementById('passLength').value = ''
+    //desmarcar checkbox
+    checkUpper.checked = false 
+    checkLower.checked = false 
+    checkNumber.checked = false 
+    checkSymbol.checked = false 
 }
