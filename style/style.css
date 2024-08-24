@@ -10,6 +10,8 @@
 }
 p{
     font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: -10px;
 }
 
 :root{
@@ -41,14 +43,7 @@ main{
     flex-direction: column;*/
     
 }
-label{
-    margin-bottom: 5px;
-    font-size: 20px;
-}
-input{
-    margin: 8px 0;;
-    
-}
+
 
 .inputText{
     padding: 8px;
@@ -56,8 +51,6 @@ input{
     outline-color:var(--verde) ;
     border: none;
     border-radius: 5px;
-}
-#inputLength{
 }
 
 #inputUpper{
