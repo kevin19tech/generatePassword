@@ -75,8 +75,10 @@ function generatePassword(){
 
 function limpar(){
     passwordText.innerText = ''
-    passwordArray = []
     resultArea.style.display = 'none'
+    
+
+    
     
     
 }
