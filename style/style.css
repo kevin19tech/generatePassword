@@ -95,3 +95,12 @@ main{
 #areaResultado{
     text-align: center;
 }
+#resultToogle{
+    
+    margin-bottom: 5px;
+}
+#result{
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
