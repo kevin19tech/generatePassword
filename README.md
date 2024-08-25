@@ -4,7 +4,7 @@
 
 ## Descrição
 
-Por meio desse site é possível gerar senhas de acordo com alguns critérios escolhidos pelos usuário, como tamanho da senha e tipos de caracteres. Um dos objetivos do projeto é conscientizar sobre a importância de serem usadas senhas mais seguras na internet, evitando o uso de senhas fáceis. Além disso, torna mais rápida a criação de senhas, visto que elas são aleatórias. 
+Por meio desse site é possível gerar senhas de acordo com alguns critérios escolhidos pelo usuário, como tamanho da senha e tipos de caracteres. Um dos objetivos do projeto é conscientizar sobre a importância de serem usadas senhas mais seguras na internet, evitando o uso de senhas fáceis. Além disso, torna mais rápida a criação de senhas, visto que elas são aleatórias. 
 
 ## Funcionalidades
 
