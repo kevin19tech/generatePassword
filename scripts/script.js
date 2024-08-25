@@ -7,7 +7,7 @@ const lowerArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 
 const numbersArray = [0,1,2,3,4,5,6,7,8,9]
 //symbols - símbolos
 const symbolsArray = ['!','@','#','$','%','^','&','*','(',')','_','+','~','`','|','}','{','[',']',':',';','?','>','<',',','.','/','-','=']
-const passwordArray = []
+let passwordArray = []
 //variaveis
 var resultArea = document.getElementById('resultToogle')
 var passwordText = document.getElementById('result')
@@ -27,6 +27,7 @@ function generatePassword(){
     }else if(passwordLength <= 3){ //verificar se tamanho é maior do que 4
         alert('Sua senha tem menos de 4 caracteres. Por favor, escolha uma quantidade a partir de 4') 
     }else{
+        passwordArray = []
         let x = 1
 
         while(x <= passwordLength && passwordArray.length <= passwordLength){
@@ -57,9 +58,6 @@ function generatePassword(){
         console.log(x)
         console.log('array' + passwordArray)
         }
-        
-
-
         resultArea.style.display = 'block'
         passwordText.innerText = passwordArray.join('')
 
@@ -84,4 +82,5 @@ function limpar(){
     checkLower.checked = false 
     checkNumber.checked = false 
     checkSymbol.checked = false 
+    
 }
