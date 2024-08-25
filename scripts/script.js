@@ -87,3 +87,4 @@ function limpar(){
     checkSymbol.checked = false 
     
 }
+
