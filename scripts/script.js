@@ -26,7 +26,8 @@ function generatePassword(){
         alert('O campo de quantidade de caracteres está em branco. É necessário preencher.')
     }else if(passwordLength <= 3){ //verificar se tamanho é maior do que 4
         alert('Sua senha tem menos de 4 caracteres. Por favor, escolha uma quantidade a partir de 4') 
-    }else{
+    }
+    else if( checkUpper.checked || checkLower.checked || checkNumber.checked || checkSymbol.checked){
         passwordArray = []
         let x = 1
 
@@ -66,6 +67,8 @@ function generatePassword(){
         
         
         
+    }else{
+        alert('Selecione pelo menos uma das opções.')
     }
 
 
