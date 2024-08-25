@@ -26,6 +26,3 @@ Por meio desse site é possível gerar senhas de acordo com alguns critérios es
 ## Autor
 - **Kevin Gomes** - [GitHub](https://github.com/kevin19tech)
 - **Portfólio** - [Meu Portfólio](https://kevin19tech.github.io/portifolioKevin/)
-
-## Licença
-Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para detalhes.
